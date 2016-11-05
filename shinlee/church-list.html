@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html>
+<title>Bridge_builders</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("berlin-1571046_1920.jpg");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar w3-center w3-padding w3-black">
+    <li class="w3-left" style="width:25% !important"><a href="#">HOME</a></li>
+    <li class="w3-left" style="width:25% !important"><a href="#about">ABOUT</a></li>
+    <li class="w3-left" style="width:25% !important"><a href="#locations">Available Jobs</a></li>
+    <li class="w3-left" style="width:25% !important"><a href="#where">CONTACT</a></li>
+  </ul>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-xlarge w3-hide-small">
+    <span class="w3-tag">Learn about jobs internationally</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px"><br></span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-xlarge">
+    <span class="w3-text-white">Learn More</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-padding-left w3-padding-right">ABOUT US</span></h5>
+    <p>Bridge Builders was created by ......</p>
+    <p>Our mission to is....</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"There will always be poor people in the land. Therefore I command you to be openhanded toward your fellow Israelites who are poor and needy in your land." </i></p>
+      <p>Deuteronomy 15:11</p>
+    </div>
+    
+    
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="Locations">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-padding-left w3-padding-right">JOBS</span></h5>
+  
+    <div class="w3-row w3-center w3-card-2 w3-padding">
+      <a href="javascript:void(0)" onclick="openLocations(event, 'locations');" id="myLink">
+        <div class="w3-col s6 tablink">Locations</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openLocations(event, 'Recent');">
+        <div class="w3-col s6 tablink">Recent</div>
+      </a>
+    </div>
+
+    <div id="locations" class="w3-container Locations w3-padding-48 w3-card-2">
+      <h5>Los Angeles</h5>
+      <p class="w3-text-grey">Church of A: Senior Pastor Opening</p>
+      <br>
+    
+      <h5>Seattle</h5>
+      <p class="w3-text-grey">Holy Church of the People: Advisor Opening</p>
+      <p class="w3-text-grey">Church of the Children: Children's Paster Opening</p><br>
+    
+      <h5>Paris</h5>
+      <p class="w3-text-grey">Wonderful Church: Pastor Opening</p><br>
+    
+      <h5>Shanghai</h5>
+      <p class="w3-text-grey">Cool Church: Developer Opening</p><br>
+    
+      <h5>Cairo</h5>
+      <p class="w3-text-grey">Awesome Church: Developer Opening</p>
+    </div>
+
+    <div id="Recent" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5>Chicago</h5>
+      <p class="w3-text-grey">Great Church: Singer Opening</p><br>
+    
+      <h5>Austin</h5>
+      <p class="w3-text-grey">Sweet Church: Drummer Opening</p><br>
+    
+      <h5>Tokyo</h5>
+      <p class="w3-text-grey">Fab Church: Guitar Player Opening</p><br>
+    
+      <h5>Seoul</h5>
+      <p class="w3-text-grey">Violin Player Opening</p><br>
+    
+      <h5>Barcelona</h5>
+      <p class="w3-text-grey">Computer Tech Opening</p>
+    </div>
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-padding-left w3-padding-right">WHERE TO FIND US</span></h5>
+    <p>Find us at some address at some place.</p>
+    <div id="googleMap" class="w3-sepia" style="width:100%;height:400px;"></div>
+  
+    <p><input class="w3-input w3-border w3-padding-16" type="text" placeholder="Name"></p>
+    <p><input class="w3-input w3-border w3-padding-16" type="text" placeholder="Date and time"></p>
+    <p><input class="w3-input w3-border w3-padding-16" type="text" placeholder="Comment \ Special requirements"></p>
+    <p><button class="w3-btn">SEND MESSAGE</button></p>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+ 
+</footer>
+
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+// Google Map Location
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 12,
+  scrollwheel: false,
+  draggable: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
+
