@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Card UI Prototype</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" type="text/css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css" type="text/css">
+    <style>
+    .mdl-grid {
+      margin-top: 15vh;
+    }
+
+    .mdl-card__menu,
+    .mdl-card__title {
+      color: #fff;
+    }
+
+    .mdl-card__title {
+      height: 176px;
+      background: url('https://spaceholder.cc/400x300') center / cover;
+      padding: 0px;
+    }
+
+    .vert-center strong {
+      position: absolute;
+      margin-top: 5px;
+    }
+
+    .mdl-card__title-text {
+      width: 100%;
+      margin: 0px;
+      padding: 16px;
+      background: rgba(0,0,0,0.5);
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="mdl-layout mdl-js-layout mdl-color--primary">
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--4-col">
+
+          <!-- BEGIN CARD SNIPPET -->
+          <div class="mdl-card mdl-shadow--4dp">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">Astronaut (NASA)</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <div class="vert-center">
+                <i class="material-icons">room</i>
+                &nbsp;<strong>Houston, TX (USA)</strong>
+              </div>
+              <div class="vert-center">
+                <i class="material-icons">account_circle</i>
+                &nbsp;<strong>5% unreached</strong>
+              </div>
+              <div class="vert-center">
+                <i class="material-icons">credit_card</i>
+                &nbsp;<strong>$45/hr</strong>
+              </div>
+              <hr />
+              <p>
+                <strong>Description</strong><br />
+                Space.  The Final Frontier.  Join our team to explore Mars
+                and our expansive galaxy!!!
+              </p>
+            </div>
+            <div class="mdl-card__actions">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#">More info</a>
+            </div>
+            <div class="mdl-card__menu">
+              <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                <i class="material-icons">share</i>
+              </button>
+            </div>
+          </div>
+          <!-- END CARD SNIPPET -->
+
+        </div>
+      </div>
+    </div>
+
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  </body>
+</html>
