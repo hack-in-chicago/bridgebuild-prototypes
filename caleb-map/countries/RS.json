@@ -1,0 +1,14 @@
+markers = [
+	{
+		"name": "Job1",
+		"url": "job1",
+		"lat": 50,
+		"lng": 90
+	},
+	{
+		"name": "Job2",
+		"url": "job2",
+		"lat": 70,
+		"lng": 100
+	}
+];

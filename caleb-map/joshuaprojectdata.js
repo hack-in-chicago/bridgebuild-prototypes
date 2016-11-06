@@ -704,7 +704,7 @@ joshuadata = {
 			},
 						{	"id": "RU", 
 				customData: {"x1": "RUSSIA", "x2": "142,191,000", "x3": "175", "x4": "87", "x5": "49.7%", "x6": "countries/RS", "x7": "Christianity", "x8": "1.2%" }, 
-				url:"countries/RS" 
+				url:"countries/RS.html" 
 			},
 						{	"id": "RW", 
 				customData: {"x1": "RWANDA", "x2": "11,770,000", "x3": "12", "x4": "3", "x5": "25.0%", "x6": "countries/RW", "x7": "Christianity", "x8": "26.5%" }, 
